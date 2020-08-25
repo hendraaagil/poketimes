@@ -9,12 +9,17 @@ class Home extends Component {
   };
 
   componentDidMount() {
-    axios.get('http://jsonplaceholder.typicode.com/posts').then((res) => {
-      console.log(res);
-      this.setState({
-        posts: res.data.slice(0, 10),
+    axios
+      .get('http://jsonplaceholder.typicode.com/posts')
+      .then((res) => {
+        console.log(res);
+        this.setState({
+          posts: res.data.slice(0, 10),
+        });
+      })
+      .catch((err) => {
+        alert(err);
       });
-    });
   }
 
   render() {
