@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.home .post {
+  overflow: hidden;
+  padding-left: 96px;
+}
+
+.home .post img {
+  position: absolute;
+  top: 24px;
+  left: -96px;
+  opacity: 0.6;
+}
+
+.home .post .card-content .card-title {
+  font-weight: 400;
+  text-transform: capitalize;
+}
