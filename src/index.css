@@ -17,6 +17,13 @@ code {
   padding-left: 96px;
 }
 
+.home .post:hover {
+  background-color: #fafafa;
+  cursor: default;
+  transform: scale(1.025);
+  transition: all 0.3s;
+}
+
 .home .post img {
   position: absolute;
   top: 24px;
